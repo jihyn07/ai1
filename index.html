@@ -69,7 +69,10 @@
                 labelContainer.childNodes[0].innerHTML = "양동화. 파이썬 선생님. 자바스크립트 개발자로 5G관련 기술을 개발중입니다."
             }
             else if (prediction[1].probability.toFixed(2) > 0.90) {
-                labelContainer.childNodes[1].innerHTML = "하지현. 파이썬 초보자. 현재 AI어플리케이션을 만들고 있다."
+                labelContainer.childNodes[0].innerHTML = "하지현. 파이썬 초보자. 현재 AI어플리케이션을 만들고 있다."
+            } 
+            else {
+                labelContainer.childNodes[0].innerHTML = "" // null
             }
 
             // console.log('prediction:', prediction) // [{'className': Yang, 'probability':'0.00', 'key':value, ...},{'className':'Ha', 'probability':'0.00', 'key':value, ...}] = Array<Object> = JSON 형태
